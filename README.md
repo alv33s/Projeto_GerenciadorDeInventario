@@ -79,9 +79,43 @@ Nesse projeto foi desenvolvido um gerenciador de inventário utilizando a lingua
 Operações CRUD: O sistema permite CRUD completo para as entidades Produto e Categoria.
 Contendo validações
 
-Funcionalidades Principais
+## Funcionalidades Principais
 Cadastro e Manipulação de Produtos e Categorias: Cadastro, atualização, exclusão e consulta.
 Interface Gráfica: Interface gráfica construída no prompt de facil navegação.****
+
+## Como Executar o Projeto
+### 1️⃣ Instale o Node.js
+Se você ainda não tem o Node.js instalado, baixe e instale aqui.
+
+### 2️⃣ Inicialize um Projeto Node.js
+Se ainda não tem um package.json, execute:
+
+      npm init -y
+
+### 3️⃣ Instale as Dependências
+Você precisa do inquirer para a interface CLI:
+
+      npm install inquirer
+
+Se estiver usando TypeScript, instale também os tipos do inquirer:
+
+      npm install --save-dev @types/inquirer
+      
+### 4️⃣ Compile o TypeScript (Se Aplicável)
+Se projeto usa TypeScript, rode:
+
+      npx tsc
+
+### 5️⃣ Execute o CLI
+Agora, execute o menu no terminal com ts-node:
+
+      npx ts-node src/cli/menu.ts
+
+O Que Esse Código Faz?
+✅ Exibe um menu interativo no terminal
+✅ Permite criar, listar, buscar, atualizar e remover categorias
+✅ Permite criar, listar, buscar, atualizar e remover produtos
+✅ Garante que produtos só sejam criados se a categoria existir
 
 ## Autor
 Felipe Alves Muniz
