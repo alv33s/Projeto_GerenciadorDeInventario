@@ -1,4 +1,4 @@
-export interface Produto {
+export interface IProduto {
     id:number;
     categoriaID: number; 
     nome: string;
